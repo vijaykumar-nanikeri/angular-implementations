@@ -8,7 +8,7 @@ import { VehicleService } from '../../../vehicle.service';
 })
 export class CivicComponent implements OnInit, AfterViewChecked {
   @ViewChild('cardEl') cardEl!: ElementRef;
-  
+
   vehicleColors: any
 
   constructor(private vehicleService: VehicleService, private cdr: ChangeDetectorRef) {
@@ -18,6 +18,8 @@ export class CivicComponent implements OnInit, AfterViewChecked {
     //   // this.cdr.detectChanges();
     //   // this.cdr.markForCheck();
     // });
+
+    // hello world
   }
 
   ngOnInit(): void {
