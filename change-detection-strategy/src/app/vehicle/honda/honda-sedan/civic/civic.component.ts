@@ -18,8 +18,6 @@ export class CivicComponent implements OnInit, AfterViewChecked {
     //   // this.cdr.detectChanges();
     //   // this.cdr.markForCheck();
     // });
-
-    // hello world
   }
 
   ngOnInit(): void {
