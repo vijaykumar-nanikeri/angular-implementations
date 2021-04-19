@@ -1,0 +1,50 @@
+<div class="card card-vehicle mt-3" #cardEl>
+  <div class="card-body">
+    <div class="card-title">
+      <div class="row">
+        <div class="col-8 offset-2 text-center">
+          <div class="d-inline-block h5">
+            <span class="badge bg-dark bg-gradient rounded-pill">Vehicle</span>
+          </div>
+        </div>
+        <div class="col-2 text-end">
+          <button class="btn btn-primary btn-sm" (click)="refresh()">
+            Refresh
+            <div class="spinner-border text-light ml-3 w-h-1rem d-none" #spinnerBorderEl>
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </button>
+          <button class="btn btn-secondary btn-sm ms-1" (click)="detection()">
+            Detection
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <ul class="list-group list-group-horizontal justify-content-center">
+            <li class="list-group-item d-flex align-items-center list-group-item-warning fw-bold">Colors</li>
+            <li class="list-group-item d-flex align-items-center" *ngFor="let vehicleColor of vehicleColors">
+              {{ vehicleColor }}
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control" placeholder="Add color" #addVehicleColorEl>
+                <button class="btn btn-secondary btn-sm" (click)="addVehicleColor()">+</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card-text">
+      <div class="row justify-content-around">
+        <div class="col-5">
+          <app-honda [vehicleColors]="vehicleColors"></app-honda>
+        </div>
+        <div class="col-5">
+          <app-nissan [vehicleColors]="vehicleColors"></app-nissan>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

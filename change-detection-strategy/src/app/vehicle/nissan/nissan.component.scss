@@ -1,0 +1,12 @@
+.card {
+  background-color: #d2f4ea;
+}
+
+.card.highlight {
+  background-color: #79dfc1 !important;
+}
+
+.card.highlight .card-title {
+  border-radius: .2rem !important;
+  background-color: #ffc107 !important;
+}

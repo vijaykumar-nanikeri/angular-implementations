@@ -1,0 +1,29 @@
+<div class="card card-honda mt-3" #cardEl>
+  <div class="card-body">
+    <div class="card-title text-center">
+      <div class="h5">
+        <span class="badge bg-gradient bg-secondary my-1 rounded-pill">Honda</span>
+      </div>
+    </div>
+    <div class="card-text">
+      <div class="row">
+        <div class="col">
+          <ul class="list-group list-group-horizontal justify-content-center">
+            <li class="list-group-item list-group-item-warning fw-bold">Colors</li>
+            <li class="list-group-item" *ngFor="let vehicleColor of vehicleColors">
+              {{ vehicleColor }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-5">
+          <app-honda-sedan></app-honda-sedan>
+        </div>
+        <div class="col-5">
+          <app-honda-suv></app-honda-suv>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

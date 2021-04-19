@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-size: 0.75rem !important;
+}
+
+.card {
+  transition: 1s;
+}
+
+.w-h-1rem {
+  width: 1rem !important;
+  height: 1rem !important;
+}
+
+.card h6,
+.card:not(.card-vehicle, .card-honda, .card-nissan) .card-title {
+  margin-bottom: 0 !important;
+}
+
+.card:not(.card-vehicle, .card-honda, .card-nissan) .card-title {
+  padding: .25rem !important;
+}
